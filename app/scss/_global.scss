@@ -5,8 +5,11 @@ body {
 	flex-direction: column;/*sticky footer*/
 	margin: 0;
 	scroll-behavior: smooth;
-	font-family: '';
+	font-size: 1.8rem;
+	line-height: 2.1rem;
+	font-family: 'Raleway';
 	font-weight: 400;
+	color:  #222222;
  }
 html{
 	font-size: 10px;
@@ -22,8 +25,47 @@ button{
 	cursor: pointer;
 }
 .container{
-	max-width: 137rem;
+	max-width: 121rem;
 	margin: 0 auto;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
+}
+.title{
+	font-family: 'Lora';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 2.8rem;
+	line-height: 36px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+.title-page{
+	font-family: 'Lora';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 5.4rem;
+	line-height: 6.9rem;
+	letter-spacing: 0.03em;
+	color: #FFFFFF;
+}
+.text-page{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%;
+	letter-spacing: 0.03em;
+}
+.text{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%;
+	letter-spacing: 0.03em;
+}
+button{
+	display: block;
+	border: none;
+	padding: 0;
+	background-color: transparent;
 }
