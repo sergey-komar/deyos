@@ -1,6 +1,6 @@
 .header {
     background: rgba(31, 31, 31, 0.8);
-    position: absolute;
+    // position: absolute;
     height: 7.5rem;
     padding-top: .3rem;
     z-index: 2;
@@ -40,6 +40,7 @@
 .menu__list-item + .menu__list-item{
     margin-left: 7.6rem;
 }
+
 .menu__list-link {
     font-size: 1.2rem;
     line-height: 1.4rem;
@@ -65,6 +66,9 @@
 }
 .spaces__item-img {
     margin-bottom: 2rem;
+}
+.spaces__item-img img{
+    object-fit: cover;
 }
 .spaces__item-title {
     font-size: 2rem;

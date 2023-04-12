@@ -1,10 +1,10 @@
-.services-heading {
-    background: url('../images/servises/services-bg.jpg') no-repeat center;
+.works-heading {
+    background: url('../images/works/works-bg.jpg') no-repeat center;
     background-size: cover;
     min-height: 83rem;
     transform: translateY(-7.5rem);
 }
-.services-heading__block {
+.works-heading__block {
     transform: translateY(15rem);
     max-width: 72rem;
     padding: 4rem 8rem 10rem 5rem;
@@ -14,56 +14,57 @@
 .title-page {
     margin-bottom: 4rem;
 }
-.services-heading__text {
+.works-heading__text {
     margin-bottom: 2rem;
     color: #fff;
 }
-.services-heading__list-item {
+.works-heading__list-item {
     list-style: disc;
     margin-bottom: 1rem;
     color: #fff;
 }
-.services-heading__list{
+.works-heading__list{
     margin-left: 3rem;
 }
 
 //CLIENTS
-.clients{
+.clients-works{
     padding-top: 10.1rem;
     padding-bottom: 10.8rem;
     background:  #F5F1EC;
 }
-.clients__title {
+.clients-works__title {
     margin-bottom: 4rem;
 }
-.clients__text {
+.clients-works__text {
     max-width: 98rem;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
+
 //SERVICES
-.services-one, 
-.services-two,
-.services-three {
+.services-one-works, 
+.services-two-works,
+.services-three-works {
     position: relative;
 } 
-.services-one{
+.services-one-works{
     background: #FFFCF7;
 }
-.services-two{
+.services-two-works{
     background: #F5F1EC;
 }
-.services-three{
+.services-three-works{
     background: #F5F1EC;
 }
 
-.services__block {
-    padding: 15rem 10rem 16rem 0rem;
+.services-works__block {
+    padding: 22rem 10rem 22rem 0rem;
     width: 57rem;
 }
-.services__block-title {
+.services-works__block-title {
     margin-bottom: 4.3rem;
     font-family: 'Lora';
     font-weight: 500;
@@ -71,43 +72,41 @@
     line-height: 3.6rem;
     letter-spacing: 0.03em;
 }
-.services__list {
+.services-works__list {
     margin-left: 3rem;
 }
-.services__list-item {
+.services-works__list-item {
     margin-bottom: 2rem;
     list-style: disc;
 }
-.services__null-one,
-.services__null-three {
+.services-works__null-one,
+.services-works__null-three {
     position: absolute;
     width: 50%;
     height: 100%;
     top: 0;
     right: 0;
 }
-.services__wrapper--order {
-   
-}
-.services__block--order {
-    padding: 15rem 0rem 16rem 10rem;
+
+.services-works__block--order {
+    padding: 25rem 0rem 26rem 10rem;
     width: 57rem;
     margin-left: auto;
 }
-.services__null-two {
+.services-works__null-two {
     position: absolute;
     width: 50%;
     height: 100%;
     left: 0;
     top: 0;
-    background: url('../images/servises/interiror-2.jpg') no-repeat;
+    background: url('../images/works/work-2.jpg') no-repeat;
     background-size: cover;
 }
-.services__null-one{
-    background: url('../images/servises/interiror-1.jpg') no-repeat;
+.services-works__null-one{
+    background: url('../images/works/work-1.jpg') no-repeat;
     background-size: cover;
 }
-.services__null-three{
-    background: url('../images/servises/interiror-3.jpg') no-repeat;
+.services-works__null-three{
+    background: url('../images/works/work-3.jpg') no-repeat;
     background-size: cover;
 }

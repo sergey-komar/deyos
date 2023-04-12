@@ -20,10 +20,10 @@
         <nav class="menu">
         <ul class="menu__list">
             <li class="menu__list-item">
-            <a href="#" class="menu__list-link">About US</a>
+            <a href="./about.html" class="menu__list-link">About US</a>
             </li>
             <li class="menu__list-item">
-            <a href="#" class="menu__list-link">Services</a>
+            <a href="./services.html" class="menu__list-link">Services</a>
             </li>
         </ul>
         </nav>
@@ -36,9 +36,9 @@
                 <a href="#" class="menu__list-link">Projects</a>
             </li>
             <li class="menu__list-item">
-                <a href="#" class="menu__list-link">Contacts</a>
+                <a href="./contact.html" class="menu__list-link">Contacts</a>
             </li>
-            <li class="menu__list-item">
+            <li data-modal class="menu__list-item">
                 <a href="#" class="menu__list-link">Order a project</a>
             </li>
             </ul>
@@ -48,8 +48,94 @@
 </header>
 
 <main class="main">
-    
+    <div class="works-heading">
+        <div class="container">
+            <div class="works-heading__block">
+                <h1 class="works-heading__title title-page">
+                    Наши работы
+                </h1>
+                <p class="works-heading__text text-page lang" key="">
+                    Нашими компетенциями являются:
+                </p>
+                <ul class="works-heading__list">
+                    <li class="works-heading__list-item"> дизайн интерьеров</li>
+                    <li class="works-heading__list-item"> архитектурное проектирование</li>
+                    <li class="works-heading__list-item">декорирование интерьеров</li>
+                    <li class="works-heading__list-item">комплектация и мебелирование</li>
+                    <li class="works-heading__list-item">комплексное строительство, отделка, реконструкция объектов</li>
+                    <li class="works-heading__list-item"> создание ликвидных коммерческих объектов</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="clients-works">
+        <div class="container">
+          <h2 class="clients-works__title title">
+            Знакомство с клиентом и предпроектная проработка
+          </h2>
+          <p class="clients-works__text">
+            Каждый проект начинается со знакомства с компанией. В процессе обсуждения проекта мы проводим анкетирование клиента и сбор данных о локации. Для дальнейшего проектирования важно учесть технические условия по объекту, провести комплексный анализ исходный данных и пожеланий заказчика. По результатам предпроектной подготовки создается техническое задание.
+          </p>
+        </div>
+    </div>
+
+
+    <div class="services-one-works">
+        <div class="container">
+            <div class="services-works__inner">
+                <div class="services-works__wrapper">
+                    <div class="services-works__block">
+                        <div class="services-works__block-title">
+                            Работа1
+                        </div>
+                        <p class="services-works__block-text">
+                            Описание
+                        </p>
+                    </div>
+                    <div class="services-works__null-one"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services-two-works">
+        <div class="container">
+            <div class="services-works__inner">
+                <div class="services-works__wrapper--order">
+                    <div class="services-works__null services-works__null-two"></div>
+                    <div class="services-works__block--order">
+                        <div class="services-works__block-title">
+                          Работа2
+                        </div>
+                        <p class="services-works__block-text">
+                            Описание
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services-three-works">
+        <div class="container">
+            <div class="services-works__inner">
+                <div class="services-works__wrapper">
+                    <div class="services-works__block">
+                        <div class="services-works__block-title">
+                            Работа3
+                        </div>
+                        <p class="services-works__block-text">
+                            Описание
+                        </p>
+                    </div>
+                    <div class="services-works__null services-works__null-three"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
+
 
 <footer class="footer">
     <div class="container">
@@ -59,19 +145,19 @@
         </a>
         <ul class="footer__menu">
         <li class="footer__menu-item">
-            <a href="#" class="footer__menu-link">About US</a>
+            <a href="./about.html" class="footer__menu-link">About US</a>
         </li>
         <li class="footer__menu-item">
-            <a href="#" class="footer__menu-link">Services</a>
+            <a href="./services.html" class="footer__menu-link">Services</a>
         </li>
         <li class="footer__menu-item">
             <a href="#" class="footer__menu-link">Projects</a>
         </li>
         <li class="footer__menu-item">
-            <a href="#" class="footer__menu-link">Contacts</a>
+            <a href="./contact.html" class="footer__menu-link">Contacts</a>
         </li>
         </ul>
-        <button class="footer__top-btn">Order a project</button>
+        <button data-modal class="footer__top-btn">Order a project</button>
     </div>
     <div class="footer__line"></div>
     <div class="footer__bottom">
@@ -81,7 +167,20 @@
     </div>
 </footer>
 
-
+<div class="modal">
+    <div class="container">
+        <div class="modal__inner">
+            <form action="#" class="modal-form">
+                <div class="modal-form__title">contacts us:</div>
+                <input type="text" class="modal-form__input" placeholder="Name" required>
+                <input type="text" class="modal-form__input" placeholder="Phone" required>
+                <input type="text" class="modal-form__input" placeholder="E-mail" required>
+                <button class="modal-form__btn">Send</button>
+                <div data-close class="modal-form__close">&times;</div>
+            </form>
+        </div>
+    </div>
+</div>
   <script src="js/main.min.js"></script>
 </body>
 

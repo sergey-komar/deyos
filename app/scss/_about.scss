@@ -2,6 +2,7 @@
     background: url('../images/about/about-bg.jpg') no-repeat center;
     background-size: cover;
     min-height: 69rem;
+    transform: translateY(-7.5rem);
 }
 .about-heading__block {
     transform: translateY(15rem);
@@ -72,6 +73,9 @@
 .sity__item-img {
     margin-bottom: 2rem;
 }
+.sity__item-img img{
+    object-fit: cover;
+}
 .sity__item-title {
     font-size: 2rem;
     line-height: 2.3rem;
@@ -83,5 +87,8 @@
     padding-top: 11.9rem;
     padding-bottom: 7.6rem;
     background: #C8C8C8;
+}
+.map img{
+    object-fit: cover;
 }
 

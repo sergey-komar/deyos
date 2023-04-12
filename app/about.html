@@ -23,7 +23,7 @@
             <a href="#" class="menu__list-link">About US</a>
             </li>
             <li class="menu__list-item">
-            <a href="#" class="menu__list-link">Services</a>
+            <a href="./services.html" class="menu__list-link">Services</a>
             </li>
         </ul>
         </nav>
@@ -33,12 +33,12 @@
         <nav class="menu">
             <ul class="menu__list">
             <li class="menu__list-item">
-                <a href="#" class="menu__list-link">Projects</a>
+                <a href="./works.html" class="menu__list-link">Projects</a>
             </li>
             <li class="menu__list-item">
-                <a href="#" class="menu__list-link">Contacts</a>
+                <a href="./contact.html" class="menu__list-link">Contacts</a>
             </li>
-            <li class="menu__list-item">
+            <li data-modal class="menu__list-item">
                 <a href="#" class="menu__list-link">Order a project</a>
             </li>
             </ul>
@@ -142,16 +142,16 @@
             <a href="#" class="footer__menu-link">About US</a>
         </li>
         <li class="footer__menu-item">
-            <a href="#" class="footer__menu-link">Services</a>
+            <a href="./services.html" class="footer__menu-link">Services</a>
         </li>
         <li class="footer__menu-item">
-            <a href="#" class="footer__menu-link">Projects</a>
+            <a href="./works.html" class="footer__menu-link">Projects</a>
         </li>
         <li class="footer__menu-item">
-            <a href="#" class="footer__menu-link">Contacts</a>
+            <a href="./contact.html" class="footer__menu-link">Contacts</a>
         </li>
         </ul>
-        <button class="footer__top-btn">Order a project</button>
+        <button data-modal class="footer__top-btn">Order a project</button>
     </div>
     <div class="footer__line"></div>
     <div class="footer__bottom">
@@ -161,7 +161,20 @@
     </div>
 </footer>
 
-
+<div class="modal">
+    <div class="container">
+        <div class="modal__inner">
+            <form action="#" class="modal-form">
+                <div class="modal-form__title">contacts us:</div>
+                <input type="text" class="modal-form__input" placeholder="Name" required>
+                <input type="text" class="modal-form__input" placeholder="Phone" required>
+                <input type="text" class="modal-form__input" placeholder="E-mail" required>
+                <button class="modal-form__btn">Send</button>
+                <div data-close class="modal-form__close">&times;</div>
+            </form>
+        </div>
+    </div>
+</div>
   <script src="js/main.min.js"></script>
 </body>
 
