@@ -1,0 +1,87 @@
+.about-heading {
+    background: url('../images/about/about-bg.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 69rem;
+}
+.about-heading__block {
+    transform: translateY(15rem);
+    max-width: 72rem;
+    padding: 4rem 8rem 10rem 5rem;
+    background: #1F1F1F;
+    opacity: 0.8;
+}
+.title-page {
+    margin-bottom: 4rem;
+}
+.about-heading__text {
+    color: #fff;
+}
+
+//MAXIMUM
+.maximum{
+    background: #F5F1EC;
+}
+.maximum__title {
+    padding-top: 11.1rem;
+    padding-bottom: 11.2rem;
+}
+
+// CONSTANLY
+.constanly{
+    position: relative;
+    background: #FFFCF7;
+}
+.constanly__block {
+    padding: 22rem 11rem 21rem 13rem;
+}
+.constanly__block-text {
+    width: 48rem;
+    margin-left: -7rem;
+}
+.constanly__null {
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-image: url('../images/about/modern.jpg');
+    background-size: cover;
+}
+
+//MAXIMUM
+.same{
+    background:  #F5F1EC;
+}
+.same__title {
+    padding-top: 11.1rem;
+    padding-bottom: 11.2rem;
+}
+
+//SITY
+.sity{
+    padding-top: 12rem;
+    padding-bottom: 11.6rem;
+    background: #FFFCF7;
+}
+
+.sity__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sity__item-img {
+    margin-bottom: 2rem;
+}
+.sity__item-title {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.map{
+    padding-top: 11.9rem;
+    padding-bottom: 7.6rem;
+    background: #C8C8C8;
+}
+
