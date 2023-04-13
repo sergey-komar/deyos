@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Deyos</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script defer src="js/main.min.js"></script>
 </head>
 
 <body>
@@ -14,8 +15,11 @@
     <div class="container">
       <div class="header__inner">
         <div class="header__languages">
-          <button class="header__languages-btn header__languages-btn--active">EN</button>
-          <button class="header__languages-btn">RS</button>
+        
+            <button id="en" class="header__languages-btn header__languages-btn--active en">EN</button>
+            <button id="rs" class="header__languages-btn rus">RS</button>
+      
+          
         </div>
         <nav class="menu">
           <ul class="menu__list">
@@ -47,35 +51,52 @@
     </div>
   </header>
 
-
-    <main class="main">
-      <div class="slider">
-        <div class="slider__inner">
-            <div class="slider__wrapper" style="background-image: url('./images/home/bg.jpg');">
-                <div class="slider__wrapper-img"></div>
-            </div>
-            <div class="slider__wrapper" style="background-image: url('./images/home/bg-1.jpg');">
-                <div class="slider__wrapper-img"></div>
-            </div>
-            <div class="slider__wrapper" style="background-image: url('./images/home/bg-2.jpg');">
-                <div class="slider__wrapper-img"></div>
-            </div>
-        </div>
-        <div class="container">
+  <div class="slider">
+    <div class="slider__inner">
+        <div class="slider__wrapper" style="background-image: url('./images/home/bg.jpg');">
+          <div class="container">
             <div class="slider-block">
-                <div class="slider-block__title">Interiors</div>
-                <div class="slider-block__title">Architecture</div>
-                <div class="slider-block__title">Design</div>
-                <p class="slider-block__text">
-                    We create unique interiors that reflect your style and functional needs, so you feel comfortable in your home or office.
-                </p>
+                <div class="slider-block__title lang" key="interiors">Interiors</div>
+                <div class="slider-block__title lang" key="architecture">Architecture</div>
+                <div class="slider-block__title lang" key="design">Design</div>
+            </div>
+          </div>
+              <div class="slider__wrapper-img text lang" key="interiors-text">
+                  We create unique interiors that reflect your style and functional needs, so you feel comfortable in your home or office.
+              </div>
+        </div>
+        <div class="slider__wrapper" style="background-image: url('./images/home/bg-1.jpg');">
+          <div class="container">
+            <div class="slider-block">
+                <div class="slider-block__title lang" key="interiors">Interiors</div>
+                <div class="slider-block__title lang" key="architecture">Architecture</div>
+                <div class="slider-block__title lang" key="design">Design</div>
             </div>
         </div>
-       
+            <div class="slider__wrapper-img text lang" key="architectural-text">
+              Our architectural solutions are characterized by originality and functionality. We build spaces that inspire and satisfy our clients needs.
+            </div>
+        </div>
+        <div class="slider__wrapper" style="background-image: url('./images/home/bg-2.jpg');">
+          <div class="container">
+            <div class="slider-block">
+                <div class="slider-block__title lang" key="interiors">Interiors</div>
+                <div class="slider-block__title lang" key="architecture">Architecture</div>
+                <div class="slider-block__title lang" key="design">Design</div>
+            </div>
+        </div>
+            <div class="slider__wrapper-img text lang" key="designers-text">
+              Our team of designers creates unique and modern solutions that help our clients stand out and achieve success in their projects.
+            </div>
+        </div>
     </div>
+  </div>
+    <main class="main main-home">
+      
       <div class="spaces">
         <div class="container">
-          <h2 class="spaces__title title lang" key="">
+         
+          <h2 class="spaces__title title lang" key="create">
             We create spaces that inspire success
           </h2>
           <div class="spaces__block">
@@ -113,18 +134,18 @@
 
       <div class="mission">
         <div class="container">
-          <h2 class="mission__title title lang" key="">Our mission</h2>
+          <h2 class="mission__title title lang" key="mission">Our mission</h2>
           <div class="mission__block">
-            <p class="mission__block-text text lang" key="">
+            <p class="mission__block-text text lang" key="believe">
               We believe that the environment is a key factor in our well-being and happiness. It has a direct impact on our life, work, and social activities. Our mission at Design Design is to create spaces that contribute to our comfort, inspire us, and help us achieve our goals.
             </p>
-            <p class="mission__block-text text lang" key="">
+            <p class="mission__block-text text lang" key="comfortable">
               We create comfortable, functional, and inspiring spaces that reflect our values and help our clients achieve their goals.
             </p>
-            <p class="mission__block-text text lang" key="">
+            <p class="mission__block-text text lang" key="strive">
               We strive to create spaces that stimulate our senses and imagination, reflect our values, and inspire us to new achievements. We are convinced that only such spaces can truly affect our well-being and happiness.
             </p>
-            <p class="mission__block-text text lang" key="">
+            <p class="mission__block-text text lang" key="help">
               We help clients bring their ideas to life by providing the perfect combination of classic approaches and innovative solutions.
             </p>
           </div>
@@ -175,7 +196,7 @@
         </div>
       </div>
 
-  <script src="js/main.min.js"></script>
+  
 </body>
 
 </html>

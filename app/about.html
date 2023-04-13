@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Deyos</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script defer src="js/main.min.js"></script>
 </head>
 
 <body>
@@ -14,8 +15,8 @@
     <div class="container">
     <div class="header__inner">
         <div class="header__languages">
-        <button class="header__languages-btn header__languages-btn--active">EN</button>
-        <button class="header__languages-btn">RS</button>
+        <button id="en" class="header__languages-btn  en">EN</button>
+        <button id="rs" class="header__languages-btn rus">RS</button>
         </div>
         <nav class="menu">
         <ul class="menu__list">
@@ -47,23 +48,24 @@
     </div>
 </header>
 
-<main class="main">
-    <div class="about-heading">
-        <div class="container">
-            <div class="about-heading__block">
-                <h1 class="about-heading__title title-page">
-                    About US
-                </h1>
-                <p class="about-heading__text text-page lang" key="">
-                    Deyos Design unites people with the same values and passion for their work. Our architects' many years of experience with various types of projects and clients, from country villas to office buildings and from private investors to large holdings, enable our company to implement projects of any complexity.
-                </p>
-            </div>
+
+<div class="about-heading">
+    <div class="container">
+        <div class="about-heading__block">
+            <h1 class="about-heading__title title-page">
+                About US
+            </h1>
+            <p class="about-heading__text text-page lang" key="about-heading">
+                Deyos Design unites people with the same values and passion for their work. Our architects many years of experience with various types of projects and clients, from country villas to office buildings and from private investors to large holdings, enable our company to implement projects of any complexity.
+            </p>
         </div>
     </div>
+</div>
+<main class="main">
 
     <div class="maximum">
         <div class="container">
-          <h2 class="maximum__title title lang" key="">
+          <h2 class="maximum__title title lang" key="maximum">
             We create maximum added value for each project
           </h2>
         </div>
@@ -73,7 +75,7 @@
         <div class="container">
             <div class="constanly__inner">
                 <div class="constanly__block">
-                    <p class="constanly__block-text text lang" key="">
+                    <p class="constanly__block-text text lang" key="constanly">
                         We are constantly striving for self-development and expanding the geography of our activities. Our team's multiculturalism and understanding of the specificities of designing objects in different countries contribute to this
                     </p>
                 </div>
@@ -84,7 +86,7 @@
 
     <div class="same">
         <div class="container">
-          <h2 class="same__title title lang">
+          <h2 class="same__title title lang" key="same">
             We speak the same language with our clients
           </h2>
         </div>
@@ -175,7 +177,7 @@
         </div>
     </div>
 </div>
-  <script src="js/main.min.js"></script>
+  
 </body>
 
 </html>

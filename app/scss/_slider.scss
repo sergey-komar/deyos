@@ -17,16 +17,16 @@
 }
 .slider-block {
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 10%;
     width: 720px;
-    padding: 40px 70px 70px 70px;
+    padding: 40px 70px 150px 70px;
     background: #1F1F1F;
     opacity: 0.8; 
 }
 .slick-dots{
     position: absolute;
-    top: 28.5%;
+    top: 33.5%;
     left: 12%;
     z-index: 9;
 }
@@ -94,3 +94,14 @@ li.slick-active button{
     background: url('../images/home/arrows-right.png') no-repeat;
     right: 0;
 }
+
+
+.slider__wrapper-img{
+    position: absolute;
+    z-index: 99;
+    width: 50rem;
+    top: 57%;
+    left: 14%;
+    color: #fff;
+}
+
