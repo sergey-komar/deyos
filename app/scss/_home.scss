@@ -1,10 +1,16 @@
 .header {
     background: rgba(31, 31, 31, 0.8);
-    // position: absolute;
+     position: fixed;
     height: 7.5rem;
     padding-top: .3rem;
     z-index: 2;
     width: 100%;
+}
+.translate{
+    color: #fff;
+}
+.active{
+    border-bottom: 1px solid #fff;
 }
 .header__inner {
     display: flex;
@@ -28,6 +34,7 @@
 .header__languages-btn + .header__languages-btn{
     margin-left: 1.7rem;
 }
+
 .menu {
     margin-left: 10.2rem;
     display: flex;
@@ -46,6 +53,11 @@
     line-height: 1.4rem;
     text-transform: uppercase;
     color: #FFFFFF;
+    transition: all .3s ease-in;
+}
+.menu__list-link:hover{
+    font-weight: 600;
+    transition: all .3s ease-in;
 }
 .logo {
     margin-left: 10.6rem;

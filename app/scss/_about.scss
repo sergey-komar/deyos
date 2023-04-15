@@ -1,11 +1,11 @@
 .about-heading {
     background: url('../images/about/about-bg.jpg') no-repeat center;
     background-size: cover;
-    min-height: 79rem;
+    min-height: 89rem;
     transform: translateY(-7.5rem);
 }
 .about-heading__block {
-    transform: translateY(22rem);
+    transform: translateY(29rem);
     max-width: 72rem;
     padding: 4rem 8rem 9rem 5rem;
     background: #1F1F1F;
@@ -33,7 +33,7 @@
     background: #FFFCF7;
 }
 .constanly__block {
-    padding: 28rem 11rem 28rem 13rem;
+    padding: 28rem 11rem 28rem 9rem;
 }
 .constanly__block-text {
     width: 48rem;
@@ -41,7 +41,7 @@
 }
 .constanly__null {
     position: absolute;
-    width: 45%;
+    width: 50%;
     height: 100%;
     right: 0;
     top: 0;
@@ -86,7 +86,7 @@
 .map{
     padding-top: 11.9rem;
     padding-bottom: 7.6rem;
-    background: #C8C8C8;
+    background: #F5F1EC;
 }
 .map img{
     object-fit: cover;

@@ -14,41 +14,61 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <div class="header__languages">
         
-            <button id="en" class="header__languages-btn header__languages-btn--active en">EN</button>
-            <button id="rs" class="header__languages-btn rus">RS</button>
-      
+         
+            <div class="header__languages">
+              <button id="en" class="header__languages-btn header__languages-btn--active en">EN</button>
+              <button id="rs" class="header__languages-btn rus">RS</button>
+            </div>
+              <nav class="menu">
+                <ul class="menu__list">
           
-        </div>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list-item">
-              <a href="./about.html" class="menu__list-link">About US</a>
-            </li>
-            <li class="menu__list-item">
-              <a href="./services.html" class="menu__list-link">Services</a>
-            </li>
-          </ul>
-        </nav>
-          <a href="/" class="logo">
-            <img src="./images/logo.svg" alt="logo">
-          </a>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__list-item">
-                <a href="./works.html" class="menu__list-link">Projects</a>
-              </li>
-              <li class="menu__list-item">
-                <a href="./contact.html" class="menu__list-link">Contacts</a>
-              </li>
-              <li data-modal class="menu__list-item">
-                <a href="#" class="menu__list-link">Order a project</a>
-              </li>
-            </ul>
-          </nav>
+                  <li class="menu__list-item">
+                    <a href="./about.html" class="menu__list-link">About US</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="./services.html" class="menu__list-link">Services</a>
+                  </li>
+                </ul>
+              </nav>
+              <a href="/" class="logo">
+                <img src="./images/logo.svg" alt="logo">
+              </a>
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__list-item">
+                    <a href="./works.html" class="menu__list-link">Projects</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="./contact.html" class="menu__list-link">Contacts</a>
+                  </li>
+                  <li data-modal class="menu__list-item">
+                    <a href="#" class="menu__list-link">Order a project</a>
+                  </li>
+                
+                </ul>
+              </nav>
+              <ul class="mobile-menu">
+                <li class="mobile-menu__item">
+                  <a href="./about.html" class="mobile-menu__link">About US</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="./services.html" class="mobile-menu__link">Services</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="./works.html" class="mobile-menu__link">Projects</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="./contact.html" class="mobile-menu__link">Contacts</a>
+                </li>
+                <button data-modal class="mobile-menu__btn">Order a project</button>
+              </ul>
+              <div class="nav-icon">
+                <div class="nav-icon__middle"></div>
+              </div>
       </div>
     </div>
+    
   </header>
 
   <div class="slider">
@@ -56,8 +76,8 @@
         <div class="slider__wrapper" style="background-image: url('./images/home/bg.jpg');">
           <div class="container">
             <div class="slider-block">
-                <div class="slider-block__title lang" key="interiors">Interiors</div>
-                <div class="slider-block__title lang" key="architecture">Architecture</div>
+                <div class="slider-block__title slider-block__title--one lang" key="interiors">Interiors</div>
+                <div class="slider-block__title  lang" key="architecture">Architecture</div>
                 <div class="slider-block__title lang" key="design">Design</div>
             </div>
           </div>
@@ -68,9 +88,9 @@
         <div class="slider__wrapper" style="background-image: url('./images/home/bg-1.jpg');">
           <div class="container">
             <div class="slider-block">
-                <div class="slider-block__title lang" key="interiors">Interiors</div>
-                <div class="slider-block__title lang" key="architecture">Architecture</div>
-                <div class="slider-block__title lang" key="design">Design</div>
+                <div class="slider-block__title  lang" key="interiors">Interiors</div>
+                <div class="slider-block__title slider-block__title--two lang" key="architecture">Architecture</div>
+                <div class="slider-block__title  lang" key="design">Design</div>
             </div>
         </div>
             <div class="slider__wrapper-img text lang" key="architectural-text">
@@ -80,9 +100,9 @@
         <div class="slider__wrapper" style="background-image: url('./images/home/bg-2.jpg');">
           <div class="container">
             <div class="slider-block">
-                <div class="slider-block__title lang" key="interiors">Interiors</div>
-                <div class="slider-block__title lang" key="architecture">Architecture</div>
-                <div class="slider-block__title lang" key="design">Design</div>
+                <div class="slider-block__title  lang" key="interiors">Interiors</div>
+                <div class="slider-block__title  lang" key="architecture">Architecture</div>
+                <div class="slider-block__title slider-block__title--three lang" key="design">Design</div>
             </div>
         </div>
             <div class="slider__wrapper-img text lang" key="designers-text">
@@ -91,6 +111,7 @@
         </div>
     </div>
   </div>
+
     <main class="main main-home">
       
       <div class="spaces">
@@ -152,6 +173,7 @@
         </div>
       </div>
     </main>
+   
     <footer class="footer">
       <div class="container">
         <div class="footer__top">
@@ -177,10 +199,10 @@
         <div class="footer__line"></div>
         <div class="footer__bottom">
           <p class="footer__bottom-copyright">© 2023 deyosdesign.com</p>
-          <a href="#" class="footer__bottom-link">Разработка сайта epique-agency.ru</a>
+          <a href="#" class="footer__bottom-link">Site development epique-agency.ru</a>
         </div>
       </div>
-    </footer>
+    </footer> 
       <div class="modal">
         <div class="container">
             <div class="modal__inner">

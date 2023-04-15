@@ -14,9 +14,48 @@ $(function () {
         $(this).addClass('header__languages-btn--active');
       });
 
+     
 })
 
+const enButton = document.getElementById('en');
+const rsButton = document.getElementById('rs');
+const activeButton = localStorage.getItem('activeButton');
 
+if (activeButton === 'rs') {
+  rsButton.classList.add('header__languages-btn--active');
+  enButton.classList.remove('header__languages-btn--active');
+} else {
+  enButton.classList.add('header__languages-btn--active');
+  rsButton.classList.remove('header__languages-btn--active');
+  localStorage.setItem('activeButton', 'en');
+}
+
+enButton.addEventListener('click', function() {
+  if (!enButton.classList.contains('header__languages-btn--active')) {
+    enButton.classList.add('header__languages-btn--active');
+    rsButton.classList.remove('header__languages-btn--active');
+    localStorage.setItem('activeButton', 'en');
+  }
+});
+
+rsButton.addEventListener('click', function() {
+  if (!rsButton.classList.contains('header__languages-btn--active')) {
+    rsButton.classList.add('header__languages-btn--active');
+    enButton.classList.remove('header__languages-btn--active');
+    localStorage.setItem('activeButton', 'rs');
+  }
+});
+
+window.addEventListener('load', function() {
+  const activeButton = localStorage.getItem('activeButton');
+  if (activeButton === 'rs') {
+    rsButton.classList.add('header__languages-btn--active');
+    enButton.classList.remove('header__languages-btn--active');
+  } else {
+    enButton.classList.add('header__languages-btn--active');
+    rsButton.classList.remove('header__languages-btn--active');
+  }
+});
 
 
 document.addEventListener('DOMContentLoaded', getSaveLocal);
@@ -133,12 +172,7 @@ function getSaveLocal() {
 }
 
 
-// const btn = document.querySelectorAll('.header__languages-btn');
-// btn.forEach(item=>{
-//     item.addEventListener('click', () => {
-//         item.classList.toggle('header__languages-btn--active');
-//     })
-// })
+
 
 const modalBtn = document.querySelectorAll('[data-modal]');
 const modal = document.querySelector('.modal');
@@ -196,5 +230,14 @@ function calcScroll(){
     }
   
 
-
+    const menu = document.querySelector('.mobile-menu');
+    const mobile = document.querySelector('.nav-icon');
+    const main = document.querySelector('.main');
+    
+    mobile.addEventListener('click', function(){
+        this.classList.toggle('nav-icon--active');
+        menu.classList.toggle('nav--active');
+    main.classList.toggle('background');
+    });
+    
 

@@ -1,0 +1,97 @@
+.nav-icon{
+    width: 35px;
+    height: 30px;
+    display: none;
+}
+.nav-icon__middle{
+    position: relative;
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    transition: all .2s ease-in;
+}
+.nav-icon__middle::after,
+.nav-icon__middle::before{
+    position: absolute;
+    content: '';
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+}
+.nav-icon__middle::after{
+    bottom: 11px;
+    transition: all .2s ease-in;
+}
+.nav-icon__middle::before{
+    top: 11px;
+    transition: all .2s ease-in;
+}
+
+.nav-icon.nav-icon--active .nav-icon__middle{
+    background-color: transparent;
+    transition: all .2s ease-in;
+}
+.nav-icon.nav-icon--active .nav-icon__middle::after{
+    transform: rotate(45deg);
+    bottom: 0;
+    transition: all .2s ease-in;
+}
+.nav-icon.nav-icon--active .nav-icon__middle::before{
+    transform: rotate(-45deg);
+    top: 0; 
+    transition: all .2s ease-in;
+}
+.mobile-menu{
+    display: none;
+}
+
+@media(max-width: 800px){
+    .menu{
+        display: none;
+    }
+    .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7rem;
+        position: fixed;
+        width: 100%;
+        height: 80%;
+        overflow: auto;
+        background: #333333;
+        left: 0;
+        top: 0;
+        transition: all .4s ease-in;
+        transform: translateX(-100%);
+        z-index: -1;
+    }
+    .mobile-menu.nav--active{
+        transform: translateX(0);
+    }
+    .nav-icon{
+        display: block;
+        margin-left: auto;
+        margin-top: 2rem;
+    }
+    .mobile-menu__link{
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+    }
+    .mobile-menu__item{
+        margin-bottom: 4rem;
+    }
+    .mobile-menu__btn{
+        max-width: 30rem;
+        width: 100%;
+        height: 4rem;
+        color: #fff;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        text-transform: uppercase;
+    }
+    
+}
+
+

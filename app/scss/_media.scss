@@ -1,0 +1,162 @@
+@media(max-width: 1150px){
+    html{
+        font-size: 9px;
+    }
+    .menu__list-item + .menu__list-item{
+        margin-left: 5.6rem;
+    }
+    .logo,
+    .menu{
+        margin-left: 0rem;
+    }
+    .spaces__item{
+        max-width: 38rem;
+    }
+    .spaces__block{
+        column-gap: 2rem;
+    }
+    .slider__wrapper-img{
+        top: 70%;
+    }
+   
+}
+
+@media(max-width: 900px){
+    .slick-next.slick-arrow,
+    .slick-prev.slick-arrow {
+        display: none;
+    }
+}
+
+@media(max-width: 800px){
+    .logo{
+        margin-left: auto;
+    }
+    .slider-block{
+        width: 60rem;
+    }
+    .slider__wrapper-img{
+        width: 50rem;
+    }
+    
+    .main.background div{
+        background: rgba(34, 34, 34, 0.5);
+        transition: all .3s ease-in;
+    }
+   .spaces__block{
+        flex-wrap: wrap;
+        justify-content: center;
+   }
+   .spaces__item{
+    margin-bottom: 2rem;
+   }
+   .footer__menu-item +.footer__menu-item{
+    margin-left: 1rem;
+   }
+   .modal-form{
+       background: #333333;
+   }
+   .modal-form__title,
+   .modal-form__input::placeholder,
+   .modal-form__btn,
+   .modal-form__close{
+       color: #fff;
+   }
+   .modal-form__input{
+       border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+   }
+   .modal-form__btn{
+       width: 100%;
+       border: 1px solid rgba(255, 255, 255, 0.5);
+   }
+   .modal-form__btn{
+       background-color: transparent;
+   }
+
+ 
+   
+}
+@media(max-width: 650px){
+    .footer__menu{
+        display: none;
+    }
+    .slider-block{
+        width: 46rem;
+        padding-left: 5rem;
+    }
+    .slider__wrapper-img{
+        width: 40rem;
+    }
+    .slick-dots li{
+        width: 30rem;
+    }
+}
+
+@media(max-width: 550px){
+    .slider-block{
+        width: 35rem;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .slider__wrapper-img {
+        width: 31rem;
+    }
+    .slider-block__title{
+        margin-bottom: 0;
+        font-size: 42px;
+    }
+    .slider__wrapper-img {
+        top: 65%;
+        left: 10%;
+    }
+    .slick-dots li button{
+        width: 10px;
+        height: 10px;
+    }
+    .slick-dots{
+        top: 40.5%;
+        left: 7%;
+    }
+    .modal-form{
+        max-width: 35rem;
+        width: 33rem;
+        padding: 3rem 3rem;
+    }
+    .spaces{
+        padding-top: 7.6rem;
+        padding-bottom: 7.6rem;
+    }
+    .spaces__title{
+        font-size: 2.6rem;
+    }
+    .solutions__title,
+    .mission {
+        padding-top: 7.3rem;
+        padding-bottom: 7.3rem;
+    }
+    .mission__title {
+        margin-bottom: 3rem;
+    }
+    .footer__top{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer__logo{
+        width: 30rem;
+    }
+    .footer__logo img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer__top-btn{
+        margin-top: 2rem;
+    }
+    .footer__bottom-link{
+        transform: translateY(0);
+        margin-right: auto;
+        margin-top: 1rem;
+    }
+    .footer__line{
+        display: none;
+    }
+}
