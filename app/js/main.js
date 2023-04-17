@@ -5,8 +5,11 @@ $(function () {
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
         dots: true,
+        autoplay: true,
+        speed: 500,
+        pauseOnHover:  false,
         fade: true,
-
+       
     });
 
     $('.header__languages-btn').on('click',function(){
@@ -17,24 +20,70 @@ $(function () {
      
 })
 
+// const enButton = document.getElementById('en');
+// const rsButton = document.getElementById('rs');
+// const activeButton = localStorage.getItem('activeButton');
+
+// if (activeButton === 'rs') {
+//   rsButton.classList.add('header__languages-btn--active');
+//   enButton.classList.remove('header__languages-btn--active');
+// } else {
+//   enButton.classList.add('header__languages-btn--active');
+//   rsButton.classList.remove('header__languages-btn--active');
+//   localStorage.setItem('activeButton', 'en');
+// }
+
+// enButton.addEventListener('click', function() {
+//   if (!enButton.classList.contains('header__languages-btn--active')) {
+//     enButton.classList.add('header__languages-btn--active');
+//     rsButton.classList.remove('header__languages-btn--active');
+//     localStorage.setItem('activeButton', 'en');
+//   }
+// });
+
+// rsButton.addEventListener('click', function() {
+//   if (!rsButton.classList.contains('header__languages-btn--active')) {
+//     rsButton.classList.add('header__languages-btn--active');
+//     enButton.classList.remove('header__languages-btn--active');
+//     localStorage.setItem('activeButton', 'rs');
+//   }
+// });
+
+// window.addEventListener('load', function() {
+//   const activeButton = localStorage.getItem('activeButton');
+//   if (activeButton === 'rs') {
+//     rsButton.classList.add('header__languages-btn--active');
+//     enButton.classList.remove('header__languages-btn--active');
+//   } else {
+//     enButton.classList.add('header__languages-btn--active');
+//     rsButton.classList.remove('header__languages-btn--active');
+//   }
+// });
+
 const enButton = document.getElementById('en');
 const rsButton = document.getElementById('rs');
-const activeButton = localStorage.getItem('activeButton');
+let activeButton = localStorage.getItem('activeButton');
+const referrer_url = document.referrer || '';
 
-if (activeButton === 'rs') {
+if (referrer_url === '' || activeButton === null) {
+  enButton.classList.add('header__languages-btn--active');
+  rsButton.classList.remove('header__languages-btn--active');
+  activeButton = 'en';
+  localStorage.setItem('activeButton', activeButton);
+} else if (activeButton === 'rs') {
   rsButton.classList.add('header__languages-btn--active');
   enButton.classList.remove('header__languages-btn--active');
 } else {
   enButton.classList.add('header__languages-btn--active');
   rsButton.classList.remove('header__languages-btn--active');
-  localStorage.setItem('activeButton', 'en');
 }
 
 enButton.addEventListener('click', function() {
   if (!enButton.classList.contains('header__languages-btn--active')) {
     enButton.classList.add('header__languages-btn--active');
     rsButton.classList.remove('header__languages-btn--active');
-    localStorage.setItem('activeButton', 'en');
+    activeButton = 'en';
+    localStorage.setItem('activeButton', activeButton);
   }
 });
 
@@ -42,12 +91,12 @@ rsButton.addEventListener('click', function() {
   if (!rsButton.classList.contains('header__languages-btn--active')) {
     rsButton.classList.add('header__languages-btn--active');
     enButton.classList.remove('header__languages-btn--active');
-    localStorage.setItem('activeButton', 'rs');
+    activeButton = 'rs';
+    localStorage.setItem('activeButton', activeButton);
   }
 });
 
 window.addEventListener('load', function() {
-  const activeButton = localStorage.getItem('activeButton');
   if (activeButton === 'rs') {
     rsButton.classList.add('header__languages-btn--active');
     enButton.classList.remove('header__languages-btn--active');

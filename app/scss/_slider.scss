@@ -26,16 +26,20 @@
 }
 .slick-dots{
     position: absolute;
-    top: 40.5%;
+    top: 39.5%;
     left: 12%;
     z-index: 9;
 }
 
 .slick-dots li{
     display: block;
-    margin-bottom: 60px;
+    margin-bottom: 5.2rem;
     width: 500px;
+    height: 3rem;
     cursor: pointer;
+}
+.slick-dots li:first-child{
+   transform: translateY(.5rem);
 }
 .slick-dots li button{
     font-size: 0;
@@ -97,9 +101,9 @@ li.slick-active button{
 .slider__wrapper-img{
     position: absolute;
     z-index: 99;
-    width: 64rem;
-    top: 63%;
-    left: 14%;
+    width: 57rem;
+    top: 67%;
+    left: 13.9%;
     color: #fff;
 }
 .slider-block__title.slider-block__title--one,

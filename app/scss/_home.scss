@@ -34,6 +34,26 @@
 .header__languages-btn + .header__languages-btn{
     margin-left: 1.7rem;
 }
+.menu__list-link{
+    position: relative;
+}
+.menu__list-link::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;   
+}
+.menu__list-link:hover::after{
+    opacity: 1;
+    transform: translateY(0px);
+}
 
 .menu {
     margin-left: 10.2rem;

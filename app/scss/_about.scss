@@ -68,12 +68,16 @@
 .sity__block {
     display: flex;
     justify-content: space-between;
+    column-gap: 1rem;
 }
-
+.sity__item{
+    width: 28rem;
+}
 .sity__item-img {
     margin-bottom: 2rem;
 }
 .sity__item-img img{
+   
     object-fit: cover;
 }
 .sity__item-title {
